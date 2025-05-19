@@ -15,4 +15,4 @@
   <a href="">Bo Li</a>
 </b>
 
-![SE-GUI](leaderboard.pdf)
+![SE-GUI](leaderboard.png)
