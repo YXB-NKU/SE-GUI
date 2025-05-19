@@ -1,5 +1,12 @@
 <h1 align="center">Enhancing Visual Grounding for GUI Agents via Self-Evolutionary Reinforcement Learning</h1>
 
+
+We proposed a reinforcement learning-based training framework for grounding GUI agents. Utilizing **high-quality seed data filtering**, **dense policy reward**, and an **attention-based self-evolution mechanism** significantly improves the ability to locate UI elements. With only 3k training samples, SE-GUI-7B model achieves state-of-the-art performance among models of the same scale on multiple benchmark tasks.
+
+
+![SE-GUI](leaderboard.png)
+
+
 <div align="center">
 <b>
   <a href="https://github.com/YXB-NKU">Xinbin Yuan</a>, 
@@ -15,5 +22,4 @@
   <a href="">Bo Li</a>
 </b>
 
-![SE-GUI](leaderboard.png)
-设计并实现了一种基于强化学习的 GUI 智能体训练框架，通过高质量种子数据筛选、密集策略梯度反馈及注意力自演化机制显著提升界面元素定位能力。在仅使用 3k 训练样本的条件下，使 7B 参数模型在多个基准任务上达到同量级模型SOTA.
+
