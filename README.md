@@ -14,3 +14,5 @@
   <a href="">Peng-Tao Jiang</a>,
   <a href="">Bo Li</a>
 </b>
+
+![Strip-R-CNN](leaderboard.pdf)
