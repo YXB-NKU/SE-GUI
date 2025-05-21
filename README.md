@@ -1,5 +1,5 @@
 <h1 align="center">Enhancing Visual Grounding for GUI Agents via Self-Evolutionary Reinforcement Learning</h1>
-
+[![arXiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2505.12370)
 
 We proposed a reinforcement learning-based training framework for grounding GUI agents. Utilizing **high-quality seed data filtering**, **dense policy reward**, and an **attention-based self-evolution mechanism** significantly improves the ability to locate UI elements. With only 3k training samples, SE-GUI-7B model achieves state-of-the-art performance among models of the same scale on multiple benchmark tasks.
 
