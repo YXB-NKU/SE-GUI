@@ -2,8 +2,7 @@
 
 <div align="center">
 <hr>
-Zhuoxuan Cai2 Lujian Yao2 Jie Chen2
-Enguang Wang2 Qibin Hou1† Jinwei Chen2 Peng-Tao Jiang2 Bo Li2†
+
 [Xinbin Yuan]()<sup>1</sup>&nbsp;
 [Jian Zhang]()<sup>2</sup>&nbsp;
 [Kaixin Li]()<sup>3</sup>&nbsp;
