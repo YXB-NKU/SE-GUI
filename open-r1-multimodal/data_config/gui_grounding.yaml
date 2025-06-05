@@ -1,0 +1,2 @@
+datasets:
+    - json_path: /data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1/data/rec_jsons_processed/showui_desktop_no_position_high_quality_qwen25vl_4028160_attention_0.2_filtered_only_one.json
