@@ -27,5 +27,5 @@
 </div>
 
 <div align="center">
-
+<img src="leaderboard.png" width="100%">
 </div>
