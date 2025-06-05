@@ -3,7 +3,7 @@
 <div align="center">
 <hr>
 
-[Xinbin Yuan]()<sup>1</sup>&nbsp;
+[Xinbin Yuan]()<sup>1,2</sup>&nbsp;
 [Jian Zhang]()<sup>2</sup>&nbsp;
 [Kaixin Li]()<sup>3</sup>&nbsp;
 [Zhuoxuan Cai]()<sup>2</sup>&nbsp;
@@ -15,7 +15,8 @@
 [Peng-Tao Jiang]()<sup>2</sup>&nbsp;
 [Bo Li]()<sup>2,†</sup>&nbsp;
 
-<sup>1</sup> Nankai University&nbsp;&nbsp;<sup>2</sup> vivo Mobile Communication Co., Ltd&nbsp;&nbsp;<sup>3</sup>National University of Singapore<br>;<sup>†</sup> Corresponding authors.  
+<sup>1</sup> Nankai University&nbsp;&nbsp;<sup>2</sup> vivo Mobile Communication Co., Ltd&nbsp;&nbsp;<sup>3</sup>National University of Singapore<br>
+<sup>†</sup> Corresponding authors.  
 
 <h4>
 <a href="https://www.arxiv.org/pdf/2505.12370">📄 arXiv Paper</a> &nbsp; 
