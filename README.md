@@ -27,5 +27,5 @@
 </div>
 
 <div align="center">
-<img src="assets/images/main_figure.png?raw=true" width="100%">
+
 </div>
