@@ -49,47 +49,31 @@ Figure 1. **Top**: Model performance on the Grounding benchmarks and Agent benc
 
 ## :bookmark_tabs: Todos
 We will be releasing all the following contents:
-- [x] Model training and evaluation based on Qwen2-VL
+- [x] Model training and evaluation based on Qwen2.5-VL
 - [x] Model checkpoint
-- [ ] Code for grounding verifier
-- [ ] Support for Qwen2.5-VL
-- [ ] Processed training data
+- [ ] Code for attention generation
+- [ ] Seed data
 - [ ] Demo
 
 ## :bar_chart: Main Results
-Table 1. Main results on ScreenSpot-Pro, ScreenSpot, and ScreenSpot-v2 with **Qwen2-VL** as the backbone. † indicates scores obtained from our own evaluation of the official models on Huggingface.
-| Method           | Backbone VLM | ScreenSpot-Pro | ScreenSpot | ScreenSpot-v2 |
-|------------------|--------------|----------------|------------|----------------|
+Table 1. Main results on ScreenSpot-Pro, ScreenSpot, and ScreenSpot-v2 with **Qwen2.5-VL** as the backbone. † indicates scores obtained from our own evaluation of the official models on Huggingface.
+| Method            | ScreenSpot-Pro | ScreenSpot | ScreenSpot-v2 |
+|------------------|----------------|------------|----------------|
 | **_72B models:_**
-| AGUVIS-72B       | Qwen2-VL     | -              | 89.2       | -              |
-| UGround-V1-72B   | Qwen2-VL     | 34.5           | **89.4**   | -              |
-| UI-TARS-72B      | Qwen2-VL     | **38.1**       | 88.4       | **90.3**       |
+| AGUVIS-72B           | -              | 89.2       | -              |
+| UGround-V1-72B       | 34.5           | **89.4**   | -              |
+| UI-TARS-72B          | **38.1**       | 88.4       | **90.3**       |
 | **_7B models:_**
-| OS-Atlas-7B      | Qwen2-VL     | 18.9           | 82.5       | 84.1           |
-| AGUVIS-7B        | Qwen2-VL     | 22.9           | 84.4       | 86.0†          |
-| UGround-V1-7B    | Qwen2-VL     | 31.1           | 86.3       | 87.6†          |
-| UI-TARS-7B       | Qwen2-VL     | 35.7           | **89.5**   | **91.6**       |
-| GUI-Actor-7B     | Qwen2-VL     | **40.7**       | 88.3       | 89.5           |
-| GUI-Actor-7B + Verifier     | Qwen2-VL    | 44.2       | 89.7       | 90.9           |
-| **_2B models:_**
-| UGround-V1-2B    | Qwen2-VL     | 26.6           | 77.1       | -              |
-| UI-TARS-2B       | Qwen2-VL     | 27.7           | 82.3       | 84.7           |
-| GUI-Actor-2B     | Qwen2-VL     | **36.7**       | **86.5**   | **88.6**       |
-| GUI-Actor-2B + Verifier     | Qwen2-VL    | 41.8       | 86.9       | 89.3           |
-
-Table 2. Main results on the ScreenSpot-Pro and ScreenSpot-v2 with **Qwen2.5-VL** as the backbone.
-| Method         | Backbone VLM | ScreenSpot-Pro | ScreenSpot-v2 |
-|----------------|---------------|----------------|----------------|
-| **_7B models:_**
-| Qwen2.5-VL-7B  | Qwen2.5-VL    | 27.6           | 88.8           |
-| Jedi-7B        | Qwen2.5-VL    | 39.5           | 91.7           |
-| GUI-Actor-7B   | Qwen2.5-VL    | **44.6**       | **92.1**       |
-| GUI-Actor-7B + Verifier   | Qwen2.5-VL    | 47.7       | 92.5       |
+| OS-Atlas-7B          | 18.9           | 82.5       | 84.1           |
+| AGUVIS-7B            | 22.9           | 84.4       | 86.0†          |
+| UGround-V1-7B        | 31.1           | 86.3       | 87.6†          |
+| UI-TARS-7B           | 35.7           | -          | -              |
+| SE-GUI-7B            | **47.2**       | 88.2       | 90.3           |
 | **_3B models:_**
-| Qwen2.5-VL-3B  | Qwen2.5-VL    | 25.9           | 80.9           |
-| Jedi-3B        | Qwen2.5-VL    | 36.1           | 88.6           |
-| GUI-Actor-3B   | Qwen2.5-VL    | **42.2**       | **91.0**       |
-| GUI-Actor-3B + Verifier   | Qwen2.5-VL    | 45.9       | 92.4       |
+| UI-R1-3B      |   17.8           | -       | -           |
+| GUI-R1-3B     |   28.2           |  -      | -           |
+| SE-GUI-3B     |  **35.9**        | -       | -           |
+
 
 ## :rescue_worker_helmet: Installation
 1. Clone this repo to your local machine:
@@ -204,17 +188,15 @@ We also thank the authors of the following projects for their insightful work, a
 - [UGround](https://github.com/OSU-NLP-Group/UGround)
 - [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas)
 - [SeeClick](https://github.com/njucckevin/SeeClick)
+- [GUI-Actor](https://github.com/microsoft/GUI-Actor)
 
 ## :memo: Citation
 If you find this work useful in your research, please consider citing:
 ```bibtex
-@misc{wu2025guiactor,
-    title={GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents}, 
-    author={Qianhui Wu and Kanzhi Cheng and Rui Yang and Chaoyun Zhang and Jianwei Yang and Huiqiang Jiang and Jian Mu and Baolin Peng and Bo Qiao and Reuben Tan and Si Qin and Lars Liden and Qingwei Lin and Huan Zhang and Tong Zhang and Jianbing Zhang and Dongmei Zhang and Jianfeng Gao},
-    year={2025},
-    eprint={2506.03143},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2506.03143},
+@article{yuan2025enhancing,
+  title={Enhancing Visual Grounding for GUI Agents via Self-Evolutionary Reinforcement Learning},
+  author={Yuan, Xinbin and Zhang, Jian and Li, Kaixin and Cai, Zhuoxuan and Yao, Lujian and Chen, Jie and Wang, Enguang and Hou, Qibin and Chen, Jinwei and Jiang, Peng-Tao and others},
+  journal={arXiv preprint arXiv:2505.12370},
+  year={2025}
 }
 ```
