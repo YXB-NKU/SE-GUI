@@ -30,6 +30,9 @@
 <img src="images/performance.png" width="100%">
 </div>
 
+<div align="center">
+<img src="images/attention.jpg" width="100%">
+</div>
 
 Figure 1. **Top**: Model performance on the Grounding benchmarks and Agent benchmarks. Higher and more left is better. With only 3k training samples, SE-GUI-3B/7B reaches scores up to 35.8/47.2. **Bottom**: Illustration of action attention.
 
