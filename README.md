@@ -25,8 +25,9 @@
 </h4>
 
 </div>
+
 <div align="center">
-  <a href="images/performance.pdf" target="_blank"></a>
+<img src="images/performance.png" width="100%">
 </div>
 
 
