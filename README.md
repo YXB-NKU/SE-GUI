@@ -78,28 +78,24 @@ Table 1. Main results on ScreenSpot-Pro, ScreenSpot, and ScreenSpot-v2 with **Qw
 ## :rescue_worker_helmet: Installation
 1. Clone this repo to your local machine:
 ```bash
-git clone https://github.com/microsoft/GUI-Actor.git
-cd GUI-Actor
+https://github.com/YXB-NKU/SE-GUI.git
+cd SE-GUI
 ```
 2. Create a conda environment and install the dependencies:
 ```bash
-conda create -n gui_actor python=3.10
-conda activate gui_actor
-conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
-pip install -e .
+conda create -n se_gui python=3.10
+conda activate se_gui
+bash setup.sh
 ```
 ## :minidisc: Data Preparation
 1. Download the processed data from [here (coming soon)]().
 2. Modify the paths in the [data_config.yaml](./data/data_config.yaml) file to point to the downloaded data.
 
 ## :building_construction: Model Training
-1. Warmup stage:
-```bash
-bash scripts/warmup.sh
 ```
-2. Full-parameter training stage:
+Full-parameter training stage:
 ```bash
-bash scripts/train.sh
+bash src/open-r1-multimodal/run_scripts/run_grpo_gui_grounding.sh
 ```
 
 ## :checkered_flag: Evaluation on GUI Grounding Benchmarks
@@ -123,7 +119,7 @@ from gui_actor.inference import inference
 
 
 # load model
-model_name_or_path = "microsoft/GUI-Actor-7B-Qwen2-VL"
+model_name_or_path = "SE-GUI-7B"
 data_processor = Qwen2VLProcessor.from_pretrained(model_name_or_path)
 tokenizer = data_processor.tokenizer
 model = Qwen2VLForConditionalGenerationWithPointer.from_pretrained(
