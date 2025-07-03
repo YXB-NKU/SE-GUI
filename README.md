@@ -177,7 +177,7 @@ print(f"Predicted click point: [{round(px, 4)}, {round(py, 4)}]")
 This project is built upon the following projects. Thanks for their great work!
 - [Transformers](https://github.com/huggingface/transformers)
 - [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
-- [AGUVIS](https://github.com/xlang-ai/aguvis)
+- [VLM-R1](https://github.com/om-ai-lab/VLM-R1)
 
 We also thank the authors of the following projects for their insightful work, as well as for providing datasets and engaging in valuable discussions.
 - [AGUVIS](https://github.com/xlang-ai/aguvis)
