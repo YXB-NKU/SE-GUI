@@ -129,11 +129,6 @@ model = Qwen2VLForConditionalGenerationWithPointer.from_pretrained(
     attn_implementation="flash_attention_2"
 ).eval()
 
-# prepare example
-dataset = load_dataset("rootsautomation/ScreenSpot")["test"]
-example = dataset[0]
-print(f"Intruction: {example['instruction']}")
-print(f"ground-truth action region (x1, y1, x2, y2): {[round(i, 2) for i in example['bbox']]}")
 
 conversation = [
     {
@@ -161,15 +156,6 @@ conversation = [
     },
 ]
 
-# inference
-pred = inference(conversation, model, tokenizer, data_processor, use_placeholder=True, topk=3)
-px, py = pred["topk_points"][0]
-print(f"Predicted click point: [{round(px, 4)}, {round(py, 4)}]")
-
-# >> Model Response
-# Intruction: close this window
-# ground-truth action region (x1, y1, x2, y2): [0.9479, 0.1444, 0.9938, 0.2074]
-# Predicted click point: [0.9709, 0.1548]
 ```
 
 ## :+1: Acknowledgements
