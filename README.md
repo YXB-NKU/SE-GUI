@@ -108,53 +108,182 @@ python eval/screenSpot_pro.py --save_path <path_to_save_results> --data_path <pa
 
 Example usage:
 ```python
+
 import torch
+import json
+from PIL import Image
+import os
+from pprint import pprint
 
-from qwen_vl_utils import process_vision_info
-from datasets import load_dataset
-from transformers import Qwen2VLProcessor
-from gui_actor.constants import chat_template
-from gui_actor.modeling import Qwen2VLForConditionalGenerationWithPointer
-from gui_actor.inference import inference
+# Import necessary components from transformers
+from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+from transformers.models.qwen2_vl.image_processing_qwen2_vl_fast import smart_resize
 
-
-# load model
-model_name_or_path = "SE-GUI-7B"
-data_processor = Qwen2VLProcessor.from_pretrained(model_name_or_path)
-tokenizer = data_processor.tokenizer
-model = Qwen2VLForConditionalGenerationWithPointer.from_pretrained(
-    model_name_or_path,
-    torch_dtype=torch.bfloat16,
-    device_map="cuda:0",
-    attn_implementation="flash_attention_2"
-).eval()
+# Suppress a specific warning from PIL about image size if it appears
+warnings.filterwarnings("ignore", category=UserWarning, message="Corrupt EXIF data.*")
 
 
-conversation = [
-    {
-        "role": "system",
-        "content": [
+class QwenVLAgent:
+    """
+    A class to encapsulate the Qwen2.5-VL model for performing actions on an image based on instructions.
+    """
+    def __init__(self, model_path: str):
+        """
+        Initializes the model, processor, and device.
+        
+        Args:
+            model_path (str): The path or Hugging Face Hub name of the Qwen2.5-VL model.
+        """
+        print("Initializing QwenVLAgent...")
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"Using device: {self.device}")
+
+        # Load the model and processor
+        self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2", # Use "eager" if flash_attention_2 is not available
+            device_map="auto" # Automatically maps model to available devices
+        )
+        self.processor = AutoProcessor.from_pretrained(model_path)
+        print("Model and processor loaded successfully.")
+
+    def _create_prompt_messages(self, instruction: str):
+        """
+        Creates the structured message for the Qwen2.5-VL chat template.
+        The <|image_1|> token is a placeholder that the processor will replace.
+        """
+        return [
             {
-                "type": "text",
-                "text": "You are a GUI agent. You are given a task and a screenshot of the screen. You need to perform a series of pyautogui actions to complete the task.",
+                "role": "user",
+                "content": [
+                    {"type": "image"},
+                    {"type": "text", "text": instruction}
+                ]
             }
         ]
-    },
-    {
-        "role": "user",
-        "content": [
-            {
-                "type": "image",
-                "image": example["image"], # PIL.Image.Image or str to path
-                # "image_url": "https://xxxxx.png" or "https://xxxxx.jpg" or "file://xxxxx.png" or "data:image/png;base64,xxxxxxxx", will be split by "base64,"
-            },
-            {
-                "type": "text",
-                "text": example["instruction"]
-            },
-        ],
-    },
-]
+        
+    def predict_action(self, image_path: str, instruction: str):
+        """
+        Predicts a tool-call action based on an image and a text instruction.
+
+        Args:
+            image_path (str): Path to the input image.
+            instruction (str): The text instruction for the model.
+
+        Returns:
+            dict or None: A dictionary representing the parsed JSON tool call, or None if parsing fails.
+        """
+        try:
+            image = Image.open(image_path).convert("RGB")
+        except FileNotFoundError:
+            print(f"Error: Image file not found at {image_path}")
+            return None
+
+        # 1. Resize the image using the model's recommended `smart_resize`
+        # This ensures the image dimensions are optimal for the model's vision encoder.
+        resized_height, resized_width = smart_resize(
+            image.height,
+            image.width,
+            factor=self.processor.image_processor.patch_size * self.processor.image_processor.merge_size,
+            min_pixels=self.processor.image_processor.min_pixels,
+            max_pixels=99999999, # Setting a very high max to avoid downscaling small images unnecessarily
+        )
+        print(f"Original image size: {image.width}x{image.height}")
+        print(f"Resized image size: {resized_width}x{resized_height}")
+        resized_image = image.resize((resized_width, resized_height))
+
+        # 2. Create the prompt message structure
+        messages = self._create_prompt_messages(instruction)
+
+        # 3. Apply the chat template and prepare for forced decoding
+        # We'll guide the model to generate a specific JSON structure for a tool call.
+        text = self.processor.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        
+        # This is the "guide" to force the model to start generating the JSON.
+        guide_text = "<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": ["
+        
+        prompt_with_guide = text + guide_text
+        
+        # 4. Prepare inputs for the model
+        inputs = self.processor(
+            text=[prompt_with_guide],
+            images=[resized_image],
+            padding=True,
+            return_tensors="pt",
+        ).to(self.device)
+        
+        print(f"Input token length: {len(inputs.input_ids[0])}")
+
+        # 5. Generate the response
+        generated_ids = self.model.generate(
+            **inputs,
+            max_new_tokens=100,  # Limit generation to prevent runaway text
+            do_sample=False,     # Use greedy decoding for deterministic output
+        )
+
+        # 6. Decode and parse the response
+        # We only want the newly generated tokens, not the input prompt
+        generated_ids_trimmed = generated_ids[0, len(inputs.input_ids[0]):]
+        
+        raw_response = self.processor.decode(
+            generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False
+        )
+
+        # Clean trailing special tokens which can break JSON parsing
+        raw_response = raw_response.replace('<|im_end|>', '').replace('<|endoftext|>', '').strip()
+        
+        # **Correction**: Combine the guide text with the model's output to form a complete JSON string
+        full_json_string = guide_text + raw_response
+        
+        # Find the last closing brace to trim any extra generated text
+        cut_index = full_json_string.rfind('}')
+        if cut_index != -1:
+            full_json_string = full_json_string[:cut_index + 1]
+
+        print("\n--- Model Raw Output ---")
+        print(raw_response)
+        print("\n--- Attempting to Parse JSON ---")
+        print(full_json_string)
+
+        # **Correction**: Use a robust JSON parser
+        try:
+            parsed_json = json.loads(full_json_string)
+            return parsed_json
+        except json.JSONDecodeError as e:
+            print(f"\nError: Failed to parse JSON response. Details: {e}")
+            return None
+
+
+if __name__ == '__main__':
+    # --- Configuration ---
+    # Replace with your actual model path (e.g., "qwen/Qwen2.5-7B-VL-Chat")
+    MODEL_PATH = "Qwen/Qwen2.5-7B-VL-Chat"
+
+    # Create a dummy image for demonstration if it doesn't exist
+    DUMMY_IMAGE_PATH = "dummy_screenshot.png"
+    if not os.path.exists(DUMMY_IMAGE_PATH):
+        print(f"Creating a dummy image at: {DUMMY_IMAGE_PATH}")
+        dummy_img = Image.new('RGB', (1280, 720), color = 'darkcyan')
+        dummy_img.save(DUMMY_IMAGE_PATH)
+
+    # --- Execution ---
+    agent = QwenVLAgent(model_path=MODEL_PATH)
+
+    instruction = "Click on the center of the screen."
+
+    predicted_action = agent.predict_action(
+        image_path=DUMMY_IMAGE_PATH,
+        instruction=instruction
+    )
+
+    print("\n--- Final Result ---")
+    if predicted_action:
+        pprint(predicted_action)
+    else:
+        print("Could not determine an action.")
 
 ```
 
