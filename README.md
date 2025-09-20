@@ -1,5 +1,5 @@
 <!-- # GUI-Actor -->
-<h1 align="center">Enhancing Visual Grounding for GUI Agents via Self-Evolutionary Reinforcement Learning</h1>
+<h1 align="center">[NeurIPS 2025]Enhancing Visual Grounding for GUI Agents via Self-Evolutionary Reinforcement Learning</h1>
 <div align="center">
 <hr>
 
@@ -311,3 +311,4 @@ If you find this work useful in your research, please consider citing:
   year={2025}
 }
 ```
+
