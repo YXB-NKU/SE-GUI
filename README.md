@@ -15,7 +15,7 @@
 [Peng-Tao Jiang]()<sup>2</sup>&nbsp;
 [Bo Li]()<sup>2,†</sup>&nbsp;
 
-<sup>1</sup> Nankai University&nbsp;&nbsp;<sup>2</sup> vivo Mobile Communication Co., Ltd&nbsp;&nbsp;<sup>3</sup>National University of Singaporenbsp;&nbsp<sup>4</sup> Fudan University<br>
+<sup>1</sup> Nankai University&nbsp;&nbsp;<sup>2</sup> vivo Mobile Communication Co., Ltd&nbsp;&nbsp;<sup>3</sup>National University of Singapore&nbsp;&nbsp<sup>4</sup> Fudan University<br>
 <sup>†</sup> Corresponding authors.  
 
 <h4>
