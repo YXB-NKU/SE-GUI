@@ -53,8 +53,8 @@ We will be releasing all the following contents:
 - [x] Model training and evaluation based on Qwen2.5-VL
 - [x] Model checkpoint
 - [x] Code for attention generation
-- [ ] Seed data
-- [ ] Demo
+- [x] Seed data
+
 
 ## :bar_chart: Main Results
 Table 1. Main results on ScreenSpot-Pro, ScreenSpot, and ScreenSpot-v2 with **Qwen2.5-VL** as the backbone. † indicates scores obtained from our own evaluation of the official models on Huggingface.
@@ -312,6 +312,7 @@ If you find this work useful in your research, please consider citing:
   year={2025}
 }
 ```
+
 
 
 
