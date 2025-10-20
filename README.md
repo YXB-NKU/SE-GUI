@@ -51,7 +51,7 @@ Figure 1. **Top**: Model performance on the Grounding benchmarks and Agent benc
 We will be releasing all the following contents:
 - [x] Model training and evaluation based on Qwen2.5-VL
 - [x] Model checkpoint
-- [ ] Code for attention generation
+- [x] Code for attention generation
 - [ ] Seed data
 - [ ] Demo
 
@@ -311,6 +311,7 @@ If you find this work useful in your research, please consider citing:
   year={2025}
 }
 ```
+
 
 
 
