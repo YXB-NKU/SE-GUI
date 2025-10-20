@@ -22,7 +22,7 @@
 <a href="https://www.arxiv.org/pdf/2505.12370">📄 arXiv Paper</a> &nbsp; 
 <a href="https://aka.ms/SE-GUI/">🌐 Project Page</a> &nbsp; 
 <a href="https://huggingface.co/XinBB/SE-GUI-7B">🤗 Hugging Face Models</a>
-<a href="https://huggingface.co/XinBB/SE-GUI-3k">🤗 Hugging Face Datasets</a>
+<a href="https://huggingface.co/datasets/XinBB/SE-GUI-3k">🤗 Hugging Face Datasets</a>
 </h4>
 
 </div>
@@ -312,6 +312,7 @@ If you find this work useful in your research, please consider citing:
   year={2025}
 }
 ```
+
 
 
 
