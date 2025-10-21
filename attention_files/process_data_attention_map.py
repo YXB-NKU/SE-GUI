@@ -23,7 +23,7 @@ device = f"cuda:{local_rank}"
 print(f"Process {rank} using {device}")
 
 #Load model and processor (once per process)
-model_name_or_path = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1/src/open-r1-multimodal/output/Qwen2.5-VL-7B-GRPO-GUI-Grounding_showui_desktop_high_quality_attention_filtered_only_one_continual_dense_reward_quadratic_decay_0.5_format_bs16_kl0.004_nothink_10e/checkpoint-3860"  # Replace with your actual model path
+model_name_or_path = ""  # Replace with your actual model path
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
     model_name_or_path,
     device_map={"": local_rank},
@@ -338,6 +338,6 @@ def process_dataset(input_path, output_path, image_base_dir):
 
 
 if __name__ == "__main__":
-    input_path = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1/data/rec_jsons_processed/Aria_desktop_qwen25vl_grpo_2007040_wo_think_img_size_10k.json"  #这里是原始数据集文件的路径
-    output_path = "Aria_desktop_high_quality_qwen25vl_2007040_attention_0.2_two_stage.json"  # 这里是经过attention过滤的文件路径
-    image_base_dir = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1/data"  #这里是数据集的路径
+    input_path = ""  #这里是原始数据集文件的路径
+    output_path = ""  # 这里是经过attention过滤的文件路径
+    image_base_dir = ""  #这里是数据集的路径
