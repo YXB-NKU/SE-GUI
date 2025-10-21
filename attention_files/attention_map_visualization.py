@@ -92,8 +92,7 @@ from transformers.models.qwen2_vl.image_processing_qwen2_vl_fast import smart_re
 
 
 # ===> specify the model path
-model_name_or_path = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1-2/src/open-r1-multimodal/output/Qwen2.5-VL-7B-GRPO-GUI-Grounding_no_position_high_quality_continual_reward_quadratic_decay_0.5_format_bs16_kl0.004_nothink_4e/checkpoint-6036"
-#model_name_or_path = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/saves/qwen2.5_vl-7b_showui_desktop_showui_web_100k_uground_web_100k_amex_bs128_1e6_toolcall/full/sft"
+model_name_or_path = ""
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
     model_name_or_path, 
     device_map="cuda", 
@@ -104,8 +103,7 @@ model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
 tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, trust_remote_code=True)
 processor = AutoProcessor.from_pretrained(model_name_or_path,max_pixels=2007040,min_pixels=3136)
 
-#image_path_or_url = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/ScreenSpot-Pro-GUI-Grounding/ScreenSpot-Pro/images/illustrator_windows/screenshot_2024-11-29_17-33-36.png"
-image_path_or_url = "/data/vjuicefs_ai_camera_jgroup_research/public_data/11178625/LLaMA-Factory/VLM-R1/data/showui_desktop_images/message/screen_1.png"
+image_path_or_url = ""
 prompt_text = "emoji."
 image = Image.open(image_path_or_url).convert('RGB')
 # image_path_or_url = "https://github.com/open-compass/MMBench/blob/main/samples/MMBench/1.jpg?raw=true"
